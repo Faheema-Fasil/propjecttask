@@ -13,7 +13,7 @@ import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAYkYX81_QyFwH471EdXTaK334xHZt2EZ8",
-  authDomain: "task-manager-66724.firebaseapp.com",
+  authDomain: "task-manager-phi-olive.vercel.app",
   projectId: "task-manager-66724",
   storageBucket: "task-manager-66724.firebasestorage.app",
   messagingSenderId: "147805093265",
