@@ -287,7 +287,7 @@ const TaskList = ({
                             </button>
                             {menuOpenTaskId === task.id && (
                               <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
-                                <button onClick={() => editTask(task.id)} className="block flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 w-full text-left">
+                                <button onClick={() => handleEdit(task.id)} className="block flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 w-full text-left">
                                   <CiEdit /> <span>Edit</span>
                                 </button>
                                 <button onClick={() => deleteTask(task.id)} className="block flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 w-full text-left">

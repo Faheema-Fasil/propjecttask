@@ -75,7 +75,7 @@ const UpdateTask: React.FC<UpdateTaskProps> = ({
     <>
       {show && (
         <div className="fixed inset-0 bg-black/50 flex justify-center items-center text-sm z-50">
-          <div className="bg-white rounded-3xl p-4 shadow-lg w-250 relative">
+          <div className="bg-white rounded-3xl p-4 shadow-lg w-full max-w-3xl relative">
             {/* Close Button */}
             <div className="border-b w-full border-gray-300 py-8">
               <button
@@ -86,9 +86,9 @@ const UpdateTask: React.FC<UpdateTaskProps> = ({
               </button>
             </div>
 
-            <div className="flex w-full justify-between">
+            <div className="flex flex-col md:flex-row w-full justify-between">
               {/* Left Section */}
-              <div className="w-7/12 max-h-100 overflow-y-auto p-6">
+              <div className="w-full md:w-7/12 max-h-100 overflow-y-auto p-4 md:p-6">
                 <input
                   className="w-full py-2 bg-gray-50 border border-gray-300 rounded-md p-2 text-sm focus:ring-2 focus:ring-purple-500"
                   placeholder="Task title"
@@ -103,9 +103,9 @@ const UpdateTask: React.FC<UpdateTaskProps> = ({
                   onChange={handleDescriptionChange}
                 />
 
-                <div className="flex items-center gap-3 mt-2 justify-between border-gray-300">
+                <div className="flex flex-col md:flex-row items-center gap-3 mt-2 justify-between border-gray-300">
                   {/* Category Selection */}
-                  <div className="font-sm w-4/12 flex flex-col gap-2 text-gray-600">
+                  <div className="font-sm w-full md:w-4/12 flex flex-col gap-2 text-gray-600">
                     Task Category*
                     <div className="flex gap-2 text-xs">
                       <button
@@ -130,7 +130,7 @@ const UpdateTask: React.FC<UpdateTaskProps> = ({
                   </div>
 
                   {/* Due Date Picker */}
-                  <div className="font-sm w-4/12 flex flex-col gap-2 text-gray-600">
+                  <div className="font-sm w-full md:w-4/12 flex flex-col gap-2 text-gray-600">
                     Due on*
                     <input
                       type="date"
@@ -153,7 +153,7 @@ const UpdateTask: React.FC<UpdateTaskProps> = ({
                   </div>
 
                   {/* Task Status Dropdown */}
-                  <div className="font-sm w-4/12 flex flex-col gap-2 text-gray-600">
+                  <div className="font-sm w-full md:w-4/12 flex flex-col gap-2 text-gray-600">
                     Task Status*
                     <select
                       className="border border-gray-300 w-full bg-gray-50 hover:bg-gray-100 text-sm text-black py-1 rounded-full"
@@ -200,7 +200,7 @@ const UpdateTask: React.FC<UpdateTaskProps> = ({
               </div>
 
               {/* Right Section (Activity Log) */}
-              <div className="w-5/12 bg-gray-100">
+              <div className="w-full md:w-5/12 bg-gray-100">
                 <div className="flex items-center px-3 bg-white gap-2 py-4 border text-lg border-gray-300">
                   Activity
                 </div>
